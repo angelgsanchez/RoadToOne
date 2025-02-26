@@ -53,7 +53,7 @@ export default function Workouts() {
     return (
         <ScrollView style={styles.container}>
             <View style={styles.header}>
-                <Text style={styles.title}>Entrenamientos</Text>
+                <Text style={styles.title}>EntrenamientosS</Text>
                 <Text style={styles.subtitle}>Encuentra tu entrenamiento perfecto</Text>
             </View>
 
