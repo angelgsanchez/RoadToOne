@@ -1,5 +1,5 @@
 // App.tsx
-import React from "react";
+import React, { Profiler } from "react";
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -7,6 +7,8 @@ import Login from './src/screens/Login';
 import Homec from './src/screens/Home';
 import Workouts from './src/screens/Workouts';
 import Sport from './src/screens/Sport';
+import Profile from './src/screens/Profile';
+
 import Stats from './src/screens/Stats';
 
 import { RootStackParamList } from './src/types';
@@ -55,14 +57,14 @@ function MainTabs() {
 
       <Tab.Screen
         name="Progreso"
-        component={Sport}
+        component={Stats}
         options={{
           tabBarIcon: ({ color, size }) => <LineChart size={size} color={color} />,
         }}
       />
       <Tab.Screen
         name="Perfil"
-        component={Stats}
+        component={Profile}
         options={{
           tabBarIcon: ({ color, size }) => <User size={size} color={color} />,
         }}
